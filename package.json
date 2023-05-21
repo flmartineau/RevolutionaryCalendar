@@ -2,9 +2,16 @@
   "name": "revolutionary-calendar",
   "version": "1.0.1",
   "description": "A simple JavaScript library for converting dates between the French Republican Calendar and the Gregorian Calendar.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "jest": {
     "testEnvironment": "node",
