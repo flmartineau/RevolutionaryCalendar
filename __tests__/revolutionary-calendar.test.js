@@ -1,5 +1,4 @@
-import { toGregorian, toRepublican } from '../index.js';
-
+const { toGregorian, toRepublican } = require('../dist/index.js');
 
 test('Conversion from republican to gregorian', () => {
     expect(toGregorian('1 Prairial II')).toEqual(new Date(1794, 4, 20));
