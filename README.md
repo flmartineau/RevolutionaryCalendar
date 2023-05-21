@@ -15,13 +15,13 @@ npm install revolutionary-calendar
 You can use the library as follows:
 
 ```javascript
-const RevolutionaryCalendar = require('revolutionary-calendar');
+const cal = require('revolutionary-calendar');
 
 // Convert a date from the French Republican calendar to the Gregorian calendar
-let gregorianDate = RevolutionaryCalendar.toGregorian('1 Prairial II');
+let gregorianDate = cal.toGregorian('1 Prairial II');
 
 // Convert a date from the Gregorian calendar to the French Republican calendar
-let republicanDate = RevolutionaryCalendar.toRepublican(new Date(1794, 4, 20));
+let republicanDate = cal.toRepublican(new Date(1794, 4, 20));
 ```
 
 ### RevolutionaryCalendar.toGregorian(dateString)
@@ -47,7 +47,7 @@ Converts a date from the Gregorian calendar to the French Republican calendar.
 
 ## Running Tests
 
-To run tests, install Jest using `npm install --save-dev jest` and then run `npx jest`.
+To run tests, install Jest using `npm install --save-dev jest` and then run `npm run test`.
 
 
 ## Contributing
